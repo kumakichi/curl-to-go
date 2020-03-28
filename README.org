@@ -1,0 +1,22 @@
+* About
+
+  [[https://godoc.org/github.com/kumakichi/curl-to-go][https://godoc.org/github.com/kumakichi/curl-to-go?status.png]]
+
+  This is a reimplementation of [[https://github.com/mholt/curl-to-go][curl-to-go]], which is originally developed by [[https://github.com/mholt][mholt]] using javascript
+
+* How to use
+
+#+BEGIN_SRC go
+  package main
+
+  import (
+      "github.com/kumakichi/curl-to-go"
+  )
+
+  func main() {
+      tmp := "curl canhazip.com"
+      result := curl_to_go.Parse(tmp)
+      println(result)
+  }
+
+#+END_SRC
